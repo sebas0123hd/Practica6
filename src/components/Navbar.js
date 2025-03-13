@@ -6,7 +6,6 @@ const Navbar = ({}) => {
     return (
         <AppBar position="static">
             <Toolbar>
-                {/* Integración del Sidebar */}
                 <Sidebar />
                 <IconButton
                     size="large"

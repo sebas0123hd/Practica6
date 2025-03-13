@@ -15,12 +15,7 @@ const Sidebar = () => {
 
     return (
         <>
-            {/* Botón de menú */}
-            <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)}>
-                <MenuIcon />
-            </IconButton>
-
-            {/* Menú lateral */}
+            {/* Menu lateral */}
             <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <Box className="sidebar">
                     <List>
@@ -28,7 +23,7 @@ const Sidebar = () => {
                             <ListItemText primary="Inicio" />
                         </ListItem>
                         <ListItem button component={Link} to="/about">
-                            <ListItemText primary="Sobre Nosotros" />
+                            <ListItemText primary="Mas Info" />
                         </ListItem>
                     </List>
                 </Box>

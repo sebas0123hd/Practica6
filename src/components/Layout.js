@@ -13,7 +13,9 @@ const Layout = ({ children }) => {
     </Container>
 
         <Box className="footer">
-            <Typography>Derechos reservados</Typography>
+            <Typography variant="h6" component="h1" align="center">
+                Derechos reservados
+            </Typography>
         </Box>
     </Box>
     )

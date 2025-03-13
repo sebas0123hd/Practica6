@@ -12,7 +12,9 @@ const Carousel = () => {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}>
+            autoplay={{ delay: 3000 }}
+            style={{ width: "60%", height: "60%" }}
+        >
 
             <SwiperSlide>
                 <img src="diapositiva1.jpg" alt="Slide 1" className="slide" style={{ width: "100%" }}/>
@@ -21,7 +23,7 @@ const Carousel = () => {
                 <img src="diapositiva2.jpg" alt="Slide 1" className="slide" style={{ width: "100%" }}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src="diapositiva3.jpg" alt="Slide 1" className="slide" style={{ width: "50%" }}/>
+                <img src="diapositiva3.jpg" alt="Slide 1" className="slide" style={{ width: "60%" }}/>
             </SwiperSlide>
 
         </Swiper>
