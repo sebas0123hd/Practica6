@@ -1,14 +1,13 @@
-import {AppBar, Button, IconButton, Toolbar, Typography} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 import Sidebar from "./Sidebar";
 
 const Navbar = ({}) => {
     return (
-        <AppBar position="static">
+        <AppBar className="Barra" position="static">
             <Toolbar>
                 <Sidebar />
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    News
+                    Memes
                 </Typography>
                 <Button color="inherit">Login</Button>
             </Toolbar>

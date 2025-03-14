@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Barra {
+  background-color: #20810f !important;
+}
+
+.footer {
+  text-align: center;
+  background-color: gray !important;
+}
+
+.titulo1 {
+  color: gray;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 60%;
+  height: 60%;
+  color: red;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: ""; /* Elimina la flecha por defecto */
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev::after{
+  background-image: url('/public/pac.png');
+}
+
+.swiper-button-next::after{
+  background-image: url('/public/fantasma.png');
+}
+
+
+
+.swiper-pagination-bullet-active {
+  background-color: #9e1eea !important;
+}
+
+

@@ -7,13 +7,15 @@ import "swiper/css/pagination";
 const Carousel = () => {
     return (
         <Swiper
+            className="swiper-container"
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
-            style={{ width: "60%", height: "60%" }}
+
+
         >
 
             <SwiperSlide>
