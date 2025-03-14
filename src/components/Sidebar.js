@@ -15,7 +15,16 @@ const Sidebar = () => {
 
     return (
         <>
-            {/* Menu lateral */}
+            <IconButton
+                edge="start"
+                color="inherit"
+                onClick={toggleDrawer(true)}
+                size="large"
+                aria-label="menu"
+                sx={{ mr: 2 }}>
+                <MenuIcon />
+            </IconButton>
+
             <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <Box className="sidebar">
                     <List>
