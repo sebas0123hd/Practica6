@@ -34,7 +34,7 @@ const PokemonCard = ({item}) => {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <Button size="small" color="primary" Button component={Link} to="/pokemonDetail">
+            <Button size="small" color="primary" component={Link} to={`/pokemonDetail/${item.id}`}>
                 Detalles
             </Button>
         </CardActions>
