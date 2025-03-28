@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import PokemonCard from "./PokemonCard";
+import PokemonDetail from "./PokemonDetail";
 
 const Pokedex =() => {
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,7 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                 {data.items.map((item, index) => (
                     <Grid item xs={2} sm={4} md={4} key={index}>
-                        <Item><PokemonCard item = {item}></PokemonCard></Item>
+                        <Item><PokemonCard item = {item}></PokemonCard> <PokemonDetail item={item} /></Item>
                     </Grid>
                 ))}
             </Grid>

@@ -1,6 +1,21 @@
-import {Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import {
+    Box,
+    Button,
+    Card,
+    CardActionArea,
+    CardActions,
+    CardContent,
+    CardMedia, Drawer,
+    List,
+    ListItem, ListItemText,
+    Typography
+} from "@mui/material";
+import {Link} from "react-router-dom";
+import React, {useState} from "react";
+import PokemonDetail from "./PokemonDetail";
 
 const PokemonCard = ({item}) => {
+
     return ( <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
             <Box>
@@ -19,8 +34,8 @@ const PokemonCard = ({item}) => {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <Button size="small" color="primary">
-                Share
+            <Button size="small" color="primary" Button component={Link} to="/pokemonDetail">
+                Detalles
             </Button>
         </CardActions>
     </Card>);
